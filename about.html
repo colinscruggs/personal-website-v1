@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <title>Colin Scruggs | About</title>
+  
+  <link rel="stylesheet" type="text/css" href="aboutStyle.css">
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100,200' rel='stylesheet' type='text/css'>
+  
+  <!--jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+  
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
+</script>
+
+<body>
+  
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+  <div id="container">
+    <div id="header">
+      <h1 id="title">about<h1>
+      
+      <a href="index.html">
+        <div id="return">
+          <img src="http://www.veryicon.com/icon/ico/System/iOS7%20Minimal/Arrows%20Back.ico" />
+          <h3>home</h3>
+        </div>
+      </a>
+    </div>
+        
+    <div id="greeting"><h2>Hi, my name's Colin. </h2></div>
+        
+    <img id="photo" src="https://41.media.tumblr.com/ccec845a1568ec175106bb33e618d48d/tumblr_ntpt6ario81uegkjio1_400.png" />
+        
+    <div id="bio"><p>I'm currently a senior at the <br><strong>School for the Talented and Gifted.</strong><br><br><span>I'm passionate about music, design, and technology.</span></p>
+    </div>
+    
+    <div id="desc"><p>I underwent building this website to showcase some of my favorite hobbies, as well as sharpen my coding and web development skills.</p>
+    </div>
+    
+    <!-- *FOR LATER USE
+    <div class="svg-wrapper" id="resume">
+    <a href="https://drive.google.com/file/d/0B29bGOAPCqH-Z1p4emRlZ2NZRGM/view?usp=sharing" target="_blank">  
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg" >
+        <rect class="shape" id="res" height="60" width="320" />
+        <div class="text">RESUME</div>
+      </svg>
+    </a>
+    </div>
+
+      
+    <a href="">
+    <div class="svg-wrapper" id="contact">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg" >
+        <rect class="shape" id="con" height="60" width="320" />
+        <div class="text">CONTACT</div>
+      </svg>
+    </div>
+    </a>
+    -->
+        
+  </div>
+</body>

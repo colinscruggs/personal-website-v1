@@ -1,0 +1,295 @@
+/*
+* {
+  border: 1px dashed blue;
+} 
+*/
+
+/*----------CONTENT STYLE----------*/
+  
+#container {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  height: 400px;
+  border-radius: 2px;
+  top:100px;
+  border-bottom: 1px black solid;
+}
+
+#content {
+  height: 70px;
+  padding-top: 10px;
+  transition: 0.3s;
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+}
+
+#title {
+  padding-left: 20px;
+  transition: 0.3s;
+}
+
+#title:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#avatar {
+  margin: 0 auto;
+  width: 120px;
+  height:60px;
+  position: relative;
+  top: -60px;
+  left: 250px;
+}
+
+#avatar_pic {
+  height: 55px;
+  transition: 0.3s;
+  position: relative;
+  float: right;
+ }
+
+.greeting {
+  display: inline;
+  top: 20px;
+  position: relative;
+  left: 64px;
+  font-size: 13px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#avatar:hover .greeting {
+  left: 0px;
+}
+
+#audio { 
+  opacity: 0;
+  stroke: #ff7700; 
+  letter-spacing: 7px;
+  
+  animation:fadeInUp 1.5s;
+  -webkit-animation:fadeInUp 1.5s;
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#visual { 
+  opacity: 0;
+  stroke: #4f8db3; 
+  margin-top: 10px;
+  letter-spacing: 4px;
+  
+  animation:fadeInUp 1.5s;
+  -webkit-animation:fadeInUp 1.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#about {
+  opacity: 0;
+  stroke: #555555; 
+  margin-top: 10px;
+  letter-spacing: 6px;
+  
+  animation:fadeInUp 1.5s;
+  -webkit-animation:fadeInUp 1.5s;
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#footer {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 10px;
+  position: relative;
+  text-align: left;
+  left: 530px;
+  top: 90px;
+}
+
+/*----------BUTTONS----------*/
+
+.svg-wrapper {
+  position: relative;
+	margin: 0 auto;
+  width: 320px;
+  height: 60px;
+}
+
+.shape {
+  opacity: 0;
+  stroke-dasharray: 30 540;
+  stroke-dashoffset: -496;
+  stroke-width: 2px;
+  fill: transparent;  
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  width: 105px;
+  color: #111111;
+  top: -50px;
+  left: 105px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+.svg-wrapper:hover .text {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.svg-wrapper:hover {
+  background-color: #fefefe;
+  transition: 3.2;
+  cursor: pointer;
+}
+
+#aud {
+  animation: fadeInSlideLeft 0.75s;
+  -webkit-animation:fadeInSlideLeft 0.75s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-fill-mode: fowards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#vis {
+  animation: fadeInSlideLeft 0.75s;
+  -webkit-animation:fadeInSlideLeft 0.75s;
+  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  animation-fill-mode: fowards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#abo {
+  animation: fadeInSlideLeft 0.75s;
+  -webkit-animation:fadeInSlideLeft 0.75s;
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s; 
+  animation-fill-mode: fowards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/*----------ANIMATION----------*/
+@-webkit-keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    transform: translateY(50px;)
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    transform: translateY(50px;)
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInSlideLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-40px;)
+    -ms-transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px;)
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInSlideLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-40px;)
+    -ms-transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px;)
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+/*----------MISC STYLING----------*/
+h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  margin: auto;
+}
+
+p { font-family:"Raleway"}
+
+a { text-decoration: none }
+
+a:link {
+    color: #4f8db3;
+}
+
+a:visited {
+    color: #4f8db3;
+}
+
+a:active {
+    color: #4f8db3;
+}
