@@ -98,15 +98,23 @@ body {
 }
 
 /*----------CONTENT----------*/
-iframe { margin: 20px 0; }
+iframe { 
+  margin: 20px 0; 
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+iframe:hover { 
+  opacity: 1;
+  transition: 0.3s;
+}
 
 #craetion { margin: 15px 0; }
   
 #name {
-  opacity: 0;
-  animation: fadeIn 1.5s;
-  -webkit-animation:fadeIn 1.5s;
-  animation-fill-mode: fowards;
+  animation: fadeIn 5s;
+  -webkit-animation:fadeIn 5s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -116,28 +124,29 @@ iframe { margin: 20px 0; }
   -webkit-animation:fadeInSlideRight 1.5s;
     animation-delay: 1.3s;
   -webkit-animation-delay: 1.3s;
-  animation-fill-mode: fowards;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  
+  position: relative;
+  left: 7px;
 }
 
 #one {
-  opacity: 0;
   animation:fadeInUp 1.5s;
   -webkit-animation:fadeInUp 1.5s;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2.2s;
+  -webkit-animation-delay: 2.2s;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
 }
 
 #two {
-  opacity: 0;
   animation:fadeInUp 1.5s;
   -webkit-animation:fadeInUp 1.5s;
-  animation-delay: 2.3s;
-  -webkit-animation-delay: 2.3s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
 }
 
 /*----------ANIMATION----------*/
@@ -159,7 +168,7 @@ iframe { margin: 20px 0; }
   }
 }
 
-@keyframes fadeInUp{
+@-webkit-keyframes fadeInUp{
   0%{
     opacity: 0;
     transform: translateY(15px;)
@@ -167,7 +176,7 @@ iframe { margin: 20px 0; }
     -webkit-transform: translateY(15px);
   }
   100%{
-    opacity: 1;
+    opacity: 0.8;
     transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -182,7 +191,7 @@ iframe { margin: 20px 0; }
     -webkit-transform: translateY(15px);
   }
   100%{
-    opacity: 1;
+    opacity: 0.8;
     transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -290,7 +299,7 @@ h2 {
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 80px;
-  letter-spacing: 20px;
+  letter-spacing: 5px;
   margin: auto;
   color: #333333;
 }
