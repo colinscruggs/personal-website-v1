@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
   width: 700px;
   height: 1180px;
-  border-radius: 2px;
   top:100px;
 }
 
@@ -54,13 +53,14 @@ body {
   float: right;
   position: relative;
   padding: 5px;
+  right: 20px;
 }
 
 #desc {
   float: right;
   position: relative;
   top: 50px;
-  left: 135px;
+  left: 110px;
 }
 
 /*----------RETURN BUTTON----------*/
@@ -118,7 +118,6 @@ body {
   opacity: 0.8;
   transition: 0.3s;
   padding: 7px;
-
 }
 
 .thumb:hover {
@@ -277,18 +276,32 @@ h3 {
   top: 4px;
 }
 
-p { font-family:"Raleway"; font-weight: 200;}
+p {font-family:"Raleway"; font-weight: 200;}
 
-a { text-decoration: none }
+a {text-decoration: none; color: black;}
 
-a:link {
-    color: #black;
+a:link {color: black;}
+
+a:visited {color: black;}
+
+a:active {color: black;}
+
+@media only screen and (max-device-width: 1000px) {
+  #container { width: 410px; top: 0px; }
+  
+  #thumbnails {
+  position: relative;
+  left: 0px;
+  width: 410px;
+  padding-top: 15px;
 }
 
-a:visited {
-    color: black;
+.thumb {
+  opacity: 0.8;
+  transition: 0.3s;
+  padding: 0px;
 }
-
-a:active {
-    color: #4f8db3;
-}
+    
+  }
+  
+  

@@ -11,7 +11,6 @@
   margin: 0 auto;
   width: 700px;
   height: 400px;
-  border-radius: 2px;
   top:100px;
   border-bottom: 1px black solid;
 }
@@ -297,15 +296,3 @@ a:visited {
 a:active {
     color: #4f8db3;
 }
-
-@media only screen and (max-device-width: 600px) {
- div#container {
-  position: relative;
-  margin: 0 auto;
-  width: 480px;
-  height: 400px;
-  border-radius: 2px;
-  top:100px;
-  border-bottom: 1px black solid;
-}
-	}
