@@ -9,26 +9,25 @@
 }
 
 #container {
-  width: 400px;
+  width: 395px;
   height: 400px;
-  top:30px;
+  top: 30px;
 }
   
 #avatar {
-  margin: 0 auto;
-  width: 30px;
+  width: 15px;
   height:60px;
   position: relative;
-  left: -10px;
+  left: -30px;
   top: -93px;
   float: right;
 }
 
 
 #title {
-  padding-left: 20px;
   padding-bottom: 40px;
   transition: 0.3s;
+  padding-left: 0px;
 }
 
 #avatar_pic {
