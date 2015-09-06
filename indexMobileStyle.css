@@ -1,5 +1,13 @@
 /*----------CONTENT STYLE----------*/
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: inherit;
+}
+
 #container {
   width: 400px;
   height: 400px;
