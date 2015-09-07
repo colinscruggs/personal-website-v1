@@ -8,8 +8,12 @@
   display: inherit;
 }
 
+body {
+	overflow: hidden;
+}
+
 #container {
-  width: 395px;
+  width: 400px;
   height: 400px;
   top: 30px;
 }
