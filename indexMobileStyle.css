@@ -10,12 +10,18 @@
 
 body {
 	overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
 }
+
 
 #container {
   width: 400px;
   height: 400px;
-  top: 30px;
+}
+
+#content {
+  width: 100%;
 }
   
 #avatar {
@@ -61,7 +67,7 @@ body {
 #visual { 
   opacity: 0;
   stroke: #4f8db3; 
-  margin-top: 10px;
+  margin-top: 8px;
   letter-spacing: 4px;
   
   animation:fadeInUp 1.5s;
@@ -142,12 +148,8 @@ body {
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset:-496;
-  stroke-dasharray: 95 540;
-}
-
 .svg-wrapper {
   padding-bottom: 12px; 
+  width: 200px;
+  right: 60px;
 }

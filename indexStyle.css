@@ -84,7 +84,7 @@ body {
 #visual { 
   opacity: 0;
   stroke: #4f8db3; 
-  margin-top: 10px;
+  margin-top: 7px;
   letter-spacing: 4px;
   
   animation:fadeInUp 1.5s;
